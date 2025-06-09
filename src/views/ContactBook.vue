@@ -15,14 +15,20 @@
       />
       <p v-else>Không có liên hệ nào.</p>
       <div class="mt-3 row justify-content-around align-items-center">
-        <button class="btn btn-sm btn-primary" @click="refreshList()">
-          <i class="fas fa-redo"></i> Làm mới
+        <button
+          class="btn btn-sm btn-primary d-flex align-items-center"
+          @click="refreshList()"
+        >
+          <span class="material-symbols-outlined"> refresh </span> Làm mới
         </button>
         <button class="btn btn-sm btn-success" @click="goToAddContact">
-          <i class="fas fa-plus"></i> Thêm mới
+          <i class="fa-solid fa-plus"></i> Thêm mới
         </button>
-        <button class="btn btn-sm btn-danger" @click="removeAllContacts">
-          <i class="fas fa-trash"></i> Xóa tất cả
+        <button
+          class="btn btn-sm btn-danger d-flex align-items-center"
+          @click="removeAllContacts"
+        >
+          <span class="material-symbols-outlined">delete</span> Xóa tất cả
         </button>
       </div>
     </div>
