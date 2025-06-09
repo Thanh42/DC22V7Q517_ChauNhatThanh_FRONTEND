@@ -9,8 +9,8 @@ export default {
 
 <template>
   <div id="app">
-    <AppHeader />
     <div class="container mt-3">
+      <AppHeader />
       <router-view />
     </div>
   </div>

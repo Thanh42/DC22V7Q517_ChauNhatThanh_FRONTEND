@@ -1,9 +1,11 @@
 <template>
-  <div class="page row">
+  <div class="row justify-content-center pt-3">
     <div class="col-md-10">
       <InputSearch v-model="searchText" />
     </div>
-    <div class="mt-3 col-md-6">
+  </div>
+  <div class="row justify-content-center pt-3">
+    <div class="mt-3 col-md-5">
       <h4>
         Danh bạ
         <i class="fas fa-address-book"></i>
@@ -14,25 +16,31 @@
         v-model:activeIndex="activeIndex"
       />
       <p v-else>Không có liên hệ nào.</p>
-      <div class="mt-3 row justify-content-around align-items-center">
+      <div class="mt-3 d-grid gap-2 d-md-flex justify-content-between">
         <button
-          class="btn btn-sm btn-primary d-flex align-items-center"
+          type="button"
+          class="btn btn-sm btn-primary d-flex align-items-center justify-content-center"
           @click="refreshList()"
         >
           <span class="material-symbols-outlined"> refresh </span> Làm mới
         </button>
-        <button class="btn btn-sm btn-success" @click="goToAddContact">
+        <button
+          type="button"
+          class="btn btn-sm btn-success justify-content-center"
+          @click="goToAddContact"
+        >
           <i class="fa-solid fa-plus"></i> Thêm mới
         </button>
         <button
-          class="btn btn-sm btn-danger d-flex align-items-center"
+          type="button"
+          class="btn btn-sm btn-danger d-flex align-items-center justify-content-center"
           @click="removeAllContacts"
         >
           <span class="material-symbols-outlined">delete</span> Xóa tất cả
         </button>
       </div>
     </div>
-    <div class="mt-3 col-md-6">
+    <div class="mt-3 col-md-5">
       <div v-if="activeContact">
         <h4>
           Chi tiết Liên hệ
@@ -123,10 +131,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.page {
-  text-align: left;
-  max-width: 750px;
-}
-</style>
