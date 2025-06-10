@@ -24,13 +24,12 @@
         >
           <span class="material-symbols-outlined"> refresh </span> Làm mới
         </button>
-        <button
-          type="button"
-          class="btn btn-sm btn-success justify-content-center"
-          @click="goToAddContact"
+        <router-link
+          :to="{ name: 'contact.create' }"
+          class="btn btn-sm btn-success d-flex align-items-center justify-content-center"
         >
-          <i class="fa-solid fa-plus"></i> Thêm mới
-        </button>
+          <i class="fa-solid fa-plus me-1"></i> Thêm mới
+        </router-link>
         <button
           type="button"
           class="btn btn-sm btn-danger d-flex align-items-center justify-content-center"

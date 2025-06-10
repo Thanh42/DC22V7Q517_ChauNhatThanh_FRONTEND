@@ -13,6 +13,12 @@ const routes = [
     props: true, // Truyền các biến trong $route.params vào làm props
   },
   {
+    path: "/contacts/create",
+    name: "contact.create",
+    component: () => import("@/views/ContactCreate.vue"),
+    props: true, // Truyền các biến trong $route.params vào làm props
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "notfound",
     component: () => import("@/views/NotFound.vue"),
