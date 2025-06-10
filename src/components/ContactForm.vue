@@ -51,17 +51,22 @@
         <strong>Liên hệ yêu thích</strong>
       </label>
     </div>
-    <div class="form-group">
-      <button class="btn btn-primary">Lưu</button>
+    <div class="d-inline-flex gap-2">
+      <button
+        class="btn btn-primary d-flex align-items-center justify-content-center"
+      >
+        <span class="material-symbols-outlined"> save </span>Lưu
+      </button>
       <button
         v-if="contactLocal._id"
         type="button"
-        class="ml-2 btn btn-danger"
+        class="btn btn-danger d-flex align-items-center justify-content-center"
         @click="deleteContact"
       >
+        <span class="material-symbols-outlined">delete</span>
         Xóa
       </button>
-      <button type="button" class="ml-2 btn btn-danger" @click="Cancel">
+      <button type="button" class="btn btn-danger" @click="Cancel">
         Thoát
       </button>
     </div>
