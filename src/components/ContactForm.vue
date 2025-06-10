@@ -6,7 +6,7 @@
         name="name"
         type="text"
         class="form-control"
-        vmodel="contactLocal.name"
+        v-model="contactLocal.name"
       />
       <ErrorMessage name="name" class="error-feedback" />
     </div>
@@ -16,7 +16,7 @@
         name="email"
         type="email"
         class="form-control"
-        vmodel="contactLocal.email"
+        v-model="contactLocal.email"
       />
       <ErrorMessage name="email" class="error-feedback" />
     </div>
@@ -26,7 +26,7 @@
         name="address"
         type="text"
         class="form-control"
-        vmodel="contactLocal.address"
+        v-model="contactLocal.address"
       />
       <ErrorMessage name="address" class="error-feedback" />
     </div>
@@ -36,7 +36,7 @@
         name="phone"
         type="tel"
         class="form-control"
-        vmodel="contactLocal.phone"
+        v-model="contactLocal.phone"
       />
       <ErrorMessage name="phone" class="error-feedback" />
     </div>
@@ -45,7 +45,7 @@
         name="favorite"
         type="checkbox"
         class="form-check-input"
-        vmodel="contactLocal.favorite"
+        v-model="contactLocal.favorite"
       />
       <label for="favorite" class="form-check-label">
         <strong>Liên hệ yêu thích</strong>
